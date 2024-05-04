@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Your Event</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style= "background-image: url(images/background.png);">
+
+    <section class="heading">
+        <nav>
+            <div class="nav">
+                <a href="Home.html"><img src="images/logo.png" alt="Website logo" height="150px" width="150px"></a>
+
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="MYE.html">Make Your Event</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="login.html">Login/Signup</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+
+<section class="form">
+    <h2>Event Registration Form</h2><br>
+
+    <form id="registrationForm" action="submit.php" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="eventTitle"><b>Title of the Event:</b></label><br>
+            <input type="text" id="eventTitle" name="eventTitle" required><br><br>
+        </div>
+        <div>
+            <label for="eventDate"><b>Date of the Event:</b></label><br>
+            <input type="date" id="eventDate" name="eventDate" required><br><br>
+        </div>
+
+        <div>
+            <label for="event-time"><b>Select Event Time:</b></label><br>
+            <select id="event-time" name="event-time">
+                    <option value="08:00">08:00 AM</option>
+                    <option value="09:00">09:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="13:00">01:00 PM</option>
+                    <option value="14:00">02:00 PM</option>
+                    <option value="15:00">03:00 PM</option>
+                    <option value="16:00">04:00 PM</option>
+                    <option value="17:00">05:00 PM</option>
+                    <option value="18:00">06:00 PM</option>
+                    <option value="19:00">07:00 PM</option>
+                    <option value="20:00">08:00 PM</option>
+                    <option value="21:00">09:00 PM</option>
+                    <option value="22:00">10:00 PM</option>
+              </select>
+        </div>
+
+        <div><br>
+            <label for="eventType"><b>Type of Gathering:</b></label><br>
+            <select id="eventType" name="eventType" required>
+                <option value="" disabled selected>Select...</option>
+                <option value="wedding">Wedding</option>
+                <option value="graduation">Graduation</option>
+                <option value="birthday">Birthday</option>
+                <option value="funeral">Funeral</option>
+            </select><br><br>
+        </div>
+        <div>
+            <label for="guestList"><b>Attach Guest List:</b></label><br>
+            <input type="file" id="guestList" name="guestList" accept=".txt,.csv" required><br><br>
+        </div>
+        <div>
+            <label for="eventLocation"><b>Location:</b></label><br>
+            <input type="text" id="eventLocation" name="eventLocation" required><br><br>
+        </div>
+        <div>
+            <label for="eventTheme"><b>Theme of the Event:</b></label><br>
+            <input type="text" id="eventTheme" name="eventTheme" required><br><br>
+        </div>
+        <div>
+            <label for="eventThemePicture"><b>Event Theme Picture:</b></label><br>
+            <input type="file" id="eventThemePicture" name="eventThemePicture" accept="image/png,image/jpeg" required><br><br>
+        </div>
+        <button type="submit" onclick="confirmSubmission() ">Submit</button>
+    </form>
+</section>
+
+
+        <section class="sample-design">
+            <h2 style="text-align: left;margin-left: 45px; padding: 20px;">Insight into a few successful events</h2><br>
+            <div class="carousel">
+                <div class="carousel-slide">
+                    <img src="images/image1.jpeg" alt="Sample Image 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/image2.jpeg" alt="Sample Image 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/image3.jpeg" alt="Sample Image 3">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/image4.png" alt="Sample Image 4">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/Image5.png" alt="Sample Image 5">
+                </div>
+            </div>
+        </section>
+<script src="script.js"></script>
+</body>
+
+</html>

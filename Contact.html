@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url(images/background.png);">
+
+    <section class="header">
+        <nav>
+            <div class="nav">
+                <a href="Home.html"><img src="images/logo.png" alt="Website logo" height="150px" width="150px"></a>
+
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="MYE.html">Make Your Event</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Login.html">Login/Signup</a></li>
+                </ul>
+            </div>
+        </nav>    
+
+        <main>
+            <section class="contact">
+              <h2>Contact Us</h2>
+              <div class="contact-section">
+                <h3>Send Message</h3>
+                <form id="send-message-form" class="contact-form">
+                  <label for="name">Your Name:</label>
+                  <input type="text" id="name" name="name" required>
+                  <label for="email">Your Email:</label>
+                  <input type="email" id="email" name="email" required>
+                  <label for="message">Your Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+                  <button type="submit">Send</button>
+                </form>
+              </div>
+              <div class="contact-section">
+                <h3>Where to Find Us</h3>
+                <p>PSU, Riyadh, Saudi Arabia</p>
+                <iframe src="https://maps.app.goo.gl/fFVzDKbbUetEvJtL8" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </section>
+          </main>
+          
+    
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .cont {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin-left: 450px;
+            margin-top: 30px;
+        }
+
+        input[type="text"], input[type="password"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #3c2e3e;
+            color: #fff;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #3c2e3e;
+        }
+    </style>
+</head>
+<body style="background-image: url(images/background.png);">
+    
+    <section class="header">
+        <nav>
+            <div class="nav">
+                <a href="Home.html"><img src="images/logo.png" alt="Website logo" height="150px" width="150px"></a>
+
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="MYE.html">Make Your Event</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="login.html">Login/Signup</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+        <div class="cont">
+            <h2>Login</h2><br>
+            <form action="login.php" method="post">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Login">
+            </form>
+            <hr><br>
+            <h2>Signup</h2><br>
+            <form action="signup.php" method="post">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Signup">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
