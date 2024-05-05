@@ -12,7 +12,7 @@ showSlide(currentSlide);
 
 setInterval(() => {
   showSlide(currentSlide + 1);
-}, 5000); // Change slide every 3 seconds (adjust as needed)
+}, 5000); // Change slide every 5 secs
 
 // alert code
 function confirmSubmission() {
